@@ -1,0 +1,77 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier", "plugin:prettier/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "fetch": false
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "mocha", "jest", "react-hooks", "prettier"],
+  "rules": {
+    "array-bracket-spacing": ["error", "never"],
+    "array-callback-return": "error",
+    "arrow-parens": ["warn", "always"],
+    "arrow-spacing": "error",
+    "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
+    "consistent-return": "error",
+    "eqeqeq": "error",
+    "jsx-quotes": ["error", "prefer-double"],
+    "max-len": ["warn", { "code": 120, "ignoreComments": true }],
+    "no-confusing-arrow": "error",
+    "no-const-assign": "error",
+    "no-else-return": "error",
+    "no-multiple-empty-lines": "error",
+    "no-trailing-spaces": "error",
+    "no-undef-init": "error",
+    "no-var": "error",
+    "object-curly-spacing": ["error", "always"],
+    "object-shorthand": ["error", "properties"],
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prefer-destructuring": ["error", { "object": true, "array": true }],
+    "prefer-template": "error",
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/prefer-stateless-function": [1],
+    "react/destructuring-assignment": [1, "always"],
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never",
+        "beforeClosing": "never"
+      }
+    ],
+    "require-await": "error",
+    "semi": ["error", "always"],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "multiline": "last",
+        "ignoreCase": true,
+        "reservedFirst": true
+      }
+    ]
+  },
+  "parser": "babel-eslint"
+}
