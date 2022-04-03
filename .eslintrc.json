@@ -22,7 +22,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "mocha", "jest", "react-hooks", "prettier"],
+  "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
     "array-bracket-spacing": ["error", "never"],
     "array-callback-return": "error",
